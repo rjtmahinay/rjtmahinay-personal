@@ -1,0 +1,32 @@
+.footer {
+  background: var(--primary);
+  color: var(--text-on-primary);
+  padding: 60px 0 30px;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.footerLogo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-on-primary);
+}
+
+.footerSocial {
+  margin: 16px 0;
+}
+
+.footerCopyright {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  text-align: center;
+}
