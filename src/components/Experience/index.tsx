@@ -20,24 +20,28 @@ export default function Experience() {
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
                 <div className={styles.header}>
+                  <p className={styles.period}>{exp.period}</p>
                   <div>
                     <h3>{exp.title}</h3>
                     <p className={styles.company}>{exp.company}</p>
                   </div>
-                  <p className={styles.period}>{exp.period}</p>
                 </div>
-                
+
                 <div className={styles.keyImpacts}>
                   {exp.keyImpacts.map((impact, i) => (
                     <div key={i} className={styles.impactBadge}>
-                      <span className={styles.impactMetric}>{impact.metric}</span>
-                      <span className={styles.impactDesc}>{impact.description}</span>
+                      <span className={styles.impactMetric}>
+                        {impact.metric}
+                      </span>
+                      <span className={styles.impactDesc}>
+                        {impact.description}
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 <p className={styles.description}>{exp.description}</p>
-                
+
                 <ul className={styles.achievements}>
                   {exp.achievements.map((achievement, i) => (
                     <li key={i}>{achievement}</li>
